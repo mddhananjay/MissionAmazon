@@ -5,6 +5,18 @@ package com.preparation.amazon.Trees.BinaryTree;
  */
 public class CreateTree {
 
+    BinaryTreeNode eight;
+    BinaryTreeNode nine ;
+    BinaryTreeNode ten  ;
+    BinaryTreeNode _one ;
+    BinaryTreeNode six  ;
+    BinaryTreeNode seven;
+    BinaryTreeNode four ;
+    BinaryTreeNode five ;
+    BinaryTreeNode three;
+    BinaryTreeNode two  ;
+    BinaryTreeNode one  ;
+
     public CreateTree() {
 
         /*
@@ -17,23 +29,20 @@ public class CreateTree {
                       |--4
         */
 
-        BinaryTreeNode eight = new BinaryTreeNode(8);
-        BinaryTreeNode nine = new BinaryTreeNode(9);
-        BinaryTreeNode ten = new BinaryTreeNode(10);
-        BinaryTreeNode _one = new BinaryTreeNode(11);
-        BinaryTreeNode six = new BinaryTreeNode(ten,_one,6);
-        BinaryTreeNode seven = new BinaryTreeNode(null,eight,7);
-        BinaryTreeNode four = new BinaryTreeNode(4);
-        BinaryTreeNode five = new BinaryTreeNode(nine,null,5);
-        BinaryTreeNode three = new BinaryTreeNode(six,seven,3);
-        BinaryTreeNode two = new BinaryTreeNode(four,five,2);
-        BinaryTreeNode one = new BinaryTreeNode(two,three,1);
+       eight = new BinaryTreeNode(8);
+       nine  = new BinaryTreeNode(9);
+       ten   = new BinaryTreeNode(10);
+       _one  = new BinaryTreeNode(11);
+       six   = new BinaryTreeNode(ten,_one,6);
+       seven = new BinaryTreeNode(null,eight,7);
+       four  = new BinaryTreeNode(4);
+       five  = new BinaryTreeNode(nine,null,5);
+       three = new BinaryTreeNode(six,seven,3);
+       two   = new BinaryTreeNode(four,five,2);
+       one   = new BinaryTreeNode(two,three,1);
     }
 
-
-
-    // one = root
-
-
-
+    public BinaryTreeNode getRoot(){
+        return one;
+    }
 }
