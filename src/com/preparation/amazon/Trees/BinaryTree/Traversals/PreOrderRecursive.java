@@ -14,7 +14,7 @@ public class PreOrderRecursive {
 
     private void preOrder(BinaryTreeNode root){
         if (root!= null){
-            System.out.println(root.getData());
+            System.out.print("  "+root.getData());
             preOrder(root.getLeftNode());
             preOrder(root.getRightNode());
         }

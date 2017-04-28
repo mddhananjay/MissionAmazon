@@ -17,7 +17,7 @@ public class InOrderRecursive {
     private void InOrderRecursive(BinaryTreeNode root){
         if (null != root){
             InOrderRecursive(root.getLeftNode());
-            System.out.println(root.getData());
+            System.out.print("  "+root.getData());
             InOrderRecursive(root.getRightNode());
         }
     }

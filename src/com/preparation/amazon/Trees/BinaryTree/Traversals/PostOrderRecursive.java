@@ -17,7 +17,7 @@ public class PostOrderRecursive {
         if (null != root){
             postOrder(root.getLeftNode());
             postOrder(root.getRightNode());
-            System.out.println(root.getData());
+            System.out.print("  "+root.getData());
         }
     }
 }
